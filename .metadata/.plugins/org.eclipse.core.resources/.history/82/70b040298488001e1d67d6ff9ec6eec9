@@ -1,0 +1,61 @@
+package tugas1new;
+
+
+	public class Manager {
+	    private int kehadiran;
+	    private float tunjanganGolongan;
+	    private float tunjanganJabatan;
+	    private float tunjanganKehadiran;
+
+	    // Konstruktor
+	    public Manager(int kehadiran, float tunjanganGolongan, float tunjanganJabatan, float tunjanganKehadiran) {
+	        this.kehadiran = kehadiran;
+	        this.tunjanganGolongan = tunjanganGolongan;
+	        this.tunjanganJabatan = tunjanganJabatan;
+	        this.tunjanganKehadiran = tunjanganKehadiran;
+	    }
+
+	    // Getter dan setter untuk Kehadiran
+	    public int getKehadiran() {
+	        return kehadiran;
+	    }
+
+	    public void setKehadiran(int kehadiran) {
+	        this.kehadiran = kehadiran;
+	    }
+
+	    // Metode untuk menghitung tunjangan kehadiran
+	    public float tunjanganKehadiran() {
+	        return kehadiran * tunjanganKehadiran;
+	    }
+
+	    // Metode untuk menghitung tunjangan jabatan
+	    public float tunjanganJabatan() {
+	        return tunjanganJabatan;
+	    }
+
+	    // Metode untuk menghitung tunjangan golongan
+	    public float tunjanganGolongan() {
+	        return tunjanganGolongan;
+	    }
+
+	    // Metode untuk menghitung gaji total
+	    public float gajiTotal() {
+	        return tunjanganGolongan + tunjanganJabatan + tunjanganKehadiran;
+	    }
+
+	    public static void main(String[] args) {
+	        // Contoh penggunaan
+	        Manager manager = new Manager(20, 500000, 1000000, 20000);
+
+	        // Menampilkan informasi manager
+	        System.out.println("Informasi Manager:");
+	        System.out.println("Kehadiran: " + manager.getKehadiran());
+	        System.out.println("Tunjangan Golongan: " + manager.tunjanganGolongan());
+	        System.out.println("Tunjangan Jabatan: " + manager.tunjanganJabatan());
+	        System.out.println("Tunjangan Kehadiran: " + manager.tunjanganKehadiran());
+	        System.out.println("Gaji Total: " + manager.gajiTotal());
+	    }
+	}
+
+}

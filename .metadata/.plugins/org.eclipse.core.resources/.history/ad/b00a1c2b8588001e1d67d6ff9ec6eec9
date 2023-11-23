@@ -1,0 +1,79 @@
+package tugas1new;
+
+
+	public class Karyawan {
+	    private String nik;
+	    private String nama;
+	    private String jabatan;
+	    private int golongan;
+
+	    // Konstruktor
+	    public Karyawan(String nik, String nama, String jabatan, int golongan) {
+	        this.nik = nik;
+	        this.nama = nama;
+	        this.jabatan = jabatan;
+	        this.golongan = golongan;
+	    }
+
+	    // Getter dan setter untuk NIK
+	    public String getNik() {
+	        return nik;
+	    }
+
+	    public void setNik(String nik) {
+	        this.nik = nik;
+	    }
+
+	    // Getter dan setter untuk Nama
+	    public String getNama() {
+	        return nama;
+	    }
+
+	    public void setNama(String nama) {
+	        this.nama = nama;
+	    }
+
+	    // Getter dan setter untuk Jabatan
+	    public String getJabatan() {
+	        return jabatan;
+	    }
+
+	    public void setJabatan(String jabatan) {
+	        this.jabatan = jabatan;
+	    }
+
+	    // Getter dan setter untuk Golongan
+	    public int getGolongan() {
+	        return golongan;
+	    }
+
+	    public void setGolongan(int golongan) {
+	        this.golongan = golongan;
+	    }
+
+	    public static void main(String[] args) {
+	        // Contoh penggunaan
+	        Karyawan karyawan1 = new Karyawan("123456", "John Doe", "Manager", 2);
+
+	        // Mendapatkan informasi karyawan
+	        System.out.println("NIK: " + karyawan1.getNik());
+	        System.out.println("Nama: " + karyawan1.getNama());
+	        System.out.println("Jabatan: " + karyawan1.getJabatan());
+	        System.out.println("Golongan: " + karyawan1.getGolongan());
+
+	        // Mengubah informasi karyawan
+	        karyawan1.setNik("654321");
+	        karyawan1.setNama("Jane Doe");
+	        karyawan1.setJabatan("Supervisor");
+	        karyawan1.setGolongan(3);
+
+	        // Menampilkan informasi karyawan setelah diubah
+	        System.out.println("\nSetelah diubah:");
+	        System.out.println("NIK: " + karyawan1.getNik());
+	        System.out.println("Nama: " + karyawan1.getNama());
+	        System.out.println("Jabatan: " + karyawan1.getJabatan());
+	        System.out.println("Golongan: " + karyawan1.getGolongan());
+	    }
+	}
+
+
